@@ -1,0 +1,81 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+
+
+<head>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<title>OUMPA: Iffley Map - Large</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<link rel="stylesheet" media="all" type="text/css" href="final_drop.css" />
+
+<meta name="keywords" content="oxford, university, modern, pentathlon, pentathalon" />
+
+
+</head>
+
+
+
+<body>
+
+
+<!--#include virtual="navonly.sht" -->
+
+<table cellspacing="5" cellpadding="5">
+
+<tr>
+
+<td>
+
+<h1> <b>Where OUMPA Trains</b></h1>
+
+
+
+<img src="assets/pageimages/iffleymapbig.jpg"
+alt="Iffley Map Big"
+width="880"
+height="672"
+hspace="8"
+vspace="8"/>
+
+
+
+</td>
+</tr>
+</table>
+
+
+<p><font color="white">
+<center>
+<i>Please take a minute to visit our sponsor.</i><br></br>
+<a href="http://www.mightymuesli.com/" target="_blank"><img src= "assets/sponsors/mightymuesli.jpg" alt="Mighty Muesli"/></a>
+</center>
+</p>
+
+<p>
+Local businesses, for more information on sponsoring <b>OUMPA</b> - <i>Oxford University's Sports Fedaration "Club of the Year 2005/06" </i>- please contact the <a href="mailto:oumpa@ox.ac.uk">Webmaster</a> for more information.
+</font></p>
+
+<center>
+<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+  </center>
+
+<br></br>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-455488-2";
+urchinTracker();
+</script>
+
+</body>
+
+</html>

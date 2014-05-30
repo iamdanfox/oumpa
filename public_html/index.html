@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Oxford Pentathlon</title>
+
+<meta name="author" content="Dan Fox: danfoxdesign.co.uk" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en" />
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+$(document).ready(function(){
+  $("a[href^='#']").click(function(event){
+     event.preventDefault();
+     //calculate destination place
+     var dest=0;
+     if($(this.hash).offset().top > $(document).height()-$(window).height()){
+          dest=$(document).height()-$(window).height();
+     }else{
+          dest=$(this.hash).offset().top;
+     }
+     //go to destination
+     $('html,body').animate({scrollTop:dest}, 800,'swing');
+   });
+});
+
+/*]]>*/
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+
+body {background:#101623;font-family: sans-serif;/* background:#d2d2d6 */}
+
+#container {width:720px; margin:4em auto;-webkit-box-shadow: 0px 0px 25px rgba(255,255,255,0.3);position:relative;
+font-size:90%;line-height:1.3em;background: #fff;
+background-image: -webkit-gradient(radial, center 110, 0, center 110, 170, from(white), to(#ececec), color-stop(60%,#fcfcfc)); 
+}
+
+#header {text-align:Center;padding-top:4em;  }
+#header img {height:100px;}
+#header h1 {font-family:Times, serif;font-weight:normal;text-transform: uppercase;letter-spacing: 0.07em;font-size:140%;margin-bottom:0;}
+#header h1 span {font-size:70%;display:block;}
+
+.silverblue {top:4em;width:1em;position:absolute;border-top:2em solid #A4A9AB;border-bottom: 2em solid #5D748C;}
+.greenblackred {width:100%;height:2em;background: #181818;border-top: 2em solid #193C24; border-bottom: 2em solid #6D1B1B;}
+
+#leftcolours {left:0;}
+#rightcolours {right:0;}
+
+#main {padding:3em;}
+h2,h3 {font-family: 'Nothing You Could Do', cursive;margin:2em 0 0em 0;}
+p {color:#222;clear:both;}
+
+.leftimg {margin:0.5em 3em; float:left;margin-left:-3em;   width:50%;}
+.rightimg {margin:0.5em 3em; float:right;margin-right:-3em;width:50%;}
+
+
+#findoutmore {background:#e5e5e5;padding:0 0 2em 0 ;font-size:110%;border-top: 1px solid #ccc;c olor:#555;text-align:Center;}
+#findoutmore p a {color:#ddd;}
+
+a img {border:0;max-height:80px;}
+
+#getinvolved{padding:3em;height:3em}
+#getinvolved p a {color:black}
+label {display:block;}
+.left, .right {width:44%;}
+.left {float:left;text-align: right;}
+.right {float:right;text-align: left;}
+
+
+.committee:hover a {opacity:0.3;-webkit-transition-duration: 100ms;}
+.committee a {position:relative;text-decoration:none;font-family: 'Nothing You Could Do', cursive;text-align: left;-webkit-transition-duration: 300ms;}
+.committee a span {display:none;position:absolute;background:#fff;color:#000;left:0px;top:100%;padding:0.5em;width:20em;}
+.committee a span em {font-family:sans-serif;font-style: normal;font-size:80%;	white-space:nowrap;}
+
+.committee a:hover {opacity: 1;}
+.committee a:hover span {display:block;-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);}
+
+#subfindoutmore {text-align:center;}
+
+
+/*]]>*/
+</style>
+
+
+</head>
+<body>
+
+
+<div id="container">
+
+<div id="header">
+<img src="v2/oumpa_logo.jpg" alt="logo" />
+<h1><span>Oxford</span> Pentathlon</h1>
+
+<div id="leftcolours" class="silverblue"><div class="greenblackred"></div></div>
+<div id="rightcolours" class="silverblue"><div class="greenblackred"></div></div>
+
+</div>
+
+<div id="main" class="cushycms"><h2>Welcome</h2>
+
+<p><img alt="OUMPA Ladies and Gentlemen at Varsity 2013" class="rightimg" src="index_18_623480520.jpg" style="width: 317px; height: 239px;" />&nbsp;We are the Oxford University Modern Pentathlon Association (OUMPA). We train in Oxford&#39;s first-class facilities located at <a href="https://maps.google.co.uk/maps?q=Oxford+University+Sports+Complex,+Oxford&amp;hl=en&amp;ll=51.745685,-1.243172&amp;spn=0.018308,0.043988&amp;sll=51.74975,-1.245317&amp;sspn=0.018306,0.043988&amp;oq=Oxford+University+Sport&amp;hq=Oxford+University+Sports+Complex,&amp;hnear=Oxford,+United+Kingdom&amp;t=m&amp;z=15">Iffley Road</a> and compete in a range of matches and competitions from College to National level. Past members have gone on to the GB team and even to Olympic success.<br />
+<br />
+We depend upon a mixture of outstanding, experienced sportsmen and total novices to fill our Blues teams. This has ensured an open and welcoming atmosphere in all that we do. It has also resulted in 17&nbsp;consecutive Varsity victories over Cambridge.<br />
+<br />
+If you&#39;re interested in trying an exciting new sport, why not <a href="#findoutmore">find out more</a> and give pentathlon a go?</p>
+
+<h2>What is Pentathlon?</h2>
+
+<p><img alt="Women's team celebrating" class="leftimg" src="v2/celebration.jpg" style="width: 317px; height: 210px;" /> Championed by Baron Pierre de Coubertin, the founder of the modern Olympic Games, Modern Pentathlon has its origins in a 19th-century legend. The sport celebrated 100 years as an Olympic Sport at London 2012.<br />
+<br />
+The story goes that a young cavalry officer was sent on horseback to deliver a message. To complete his mission, he had to ride, fence, shoot, swim and run &ndash; the five challenges that face competitors in Modern Pentathlon today.</p>
+
+<p>The first element is fencing, in which competitors are required to fence against every other athlete. This is followed by swimming (200m freestyle) and riding (jumping an unknown horse over a 12-obstacle course). Athletes are given points for each element of the competition. Finally, there is the Combined Event, in which athletes are required to shoot five targets within 70 seconds and run 1,000m (three times over). The winner of the competition is the athlete with the greatest overall score.</p>
+
+<p>For more detailed rules and regulations, see <a href="http://pentathlongb.org/aboutmp">Pentathlon GB</a> or the <a href="http://www.pentathlongb.org/pentathlongb/resources.php?tab=forms">official rulebook</a>.</p>
+
+<h2>Training</h2>
+
+<p>Most of our training is student run and there are no compulsory early morning starts! Whether you&#39;re a serious athlete out to win competitions or you&#39;re more keen on the socials and the crewdates, we&#39;d love to hear from you.</p>
+
+<p>You don&#39;t have to be proficient at all 5 sports to try pentathlon. We have members with backgrounds in swimming, the Pony Club, athletics, and many other sports. We&#39;ll provide training sessions to build your skills and fitness before the annual Varsity Match.</p>
+
+<table border="1" cellpadding="1" cellspacing="0" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="text-align: center;"><strong>Sun</strong></td>
+			<td style="text-align: center;"><strong>Mon</strong></td>
+			<td style="text-align: center;"><strong>Tues</strong></td>
+			<td style="text-align: center;"><strong>Wed</strong></td>
+			<td style="text-align: center;"><strong>Thu</strong></td>
+			<td style="text-align: center;"><strong>Fri</strong></td>
+			<td style="text-align: center;"><strong>Sat</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Shoot and Run</strong><br />
+			8.30-11am<br />
+			Cricket Schools</td>
+			<td colspan="1" rowspan="2">Rest :)</td>
+			<td><strong>Shoot and Run</strong><br />
+			7.30-9 AM<br />
+			Cricket Schools</td>
+			<td>&nbsp;</td>
+			<td><strong>Shoot and Run&nbsp;</strong><br />
+			7.30-9.00 AM<br />
+			Cricket Schools</td>
+			<td>&nbsp;</td>
+			<td><strong>Hill Session</strong><br />
+			11am-12pm<br />
+			South parks</td>
+		</tr>
+		<tr>
+			<td><strong>Swim</strong><br />
+			4.30-6pm<br />
+			Iffley Pool</td>
+			<td>Beginners Fencing<br />
+			3.30-5.15pm<br />
+			Cricket Schools</td>
+			<td><strong>Run and Shoot</strong><br />
+			5-7 PM<br />
+			Cricket Schools</td>
+			<td><strong>Run with OUCCC</strong><br />
+			1-2 PM<br />
+			Uni Parks</td>
+			<td><strong>Fencing - Whole Club</strong><br />
+			5.30-8 PM<br />
+			Cricket Schools</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="1">Advanced&nbsp;Fencing<br />
+			7.30-10 PM<br />
+			Cricket Schools</td>
+			<td><strong>Swim</strong><br />
+			9-10 PM<br />
+			Iffley Pool</td>
+			<td>&nbsp;</td>
+			<td><strong>Swim</strong><br />
+			9-10 PM<br />
+			Iffley Pool</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<br />
+(Schedule correct for Hilary&nbsp;Term 2014.) &nbsp;You can also view the always up-to-date <a href="https://www.google.com/calendar/embed?src=q5hdl5brejac1oaljk6eqab36o%40group.calendar.google.com&amp;ctz=Europe/London&amp;mode=WEEK&amp;color=%23125A12">Google Calendar</a>&nbsp;which you can&nbsp;<a href="https://www.google.com/calendar/ical/q5hdl5brejac1oaljk6eqab36o%40group.calendar.google.com/public/basic.ics">subscribe to</a>.
+
+<h2>Competitions</h2>
+
+<ul>
+	<li><strong>Novice Varsity</strong> (9th November): every year, novices from Oxford and&nbsp;Cambridge compete in this very enjoyable pentathlon. &nbsp;It&#39;s a no-pressure introduction to the thrills of competing, without the spills of the ride. &nbsp;Cambridge are hosting this year, so we have some &quot;spectacular&quot; nightlife to look forward to!</li>
+	<li><strong>Old Blues</strong></li>
+	<li><strong>BUCS 14th-15th March 2014 - <a href="bucs_2014.pdf">full results</a></strong></li>
+	<li><strong>Varsity Match</strong> (4th-5th April 2014) - <a href="vm_results_2014.pdf">full results</a></li>
+</ul>
+Last year&#39;s competitions:
+
+<ul>
+	<li>Novice Varsity: 5th Week Michelmas -&nbsp;<a href="index_13_3840933746.xlsx">results spreadsheet</a>&nbsp;and&nbsp;<a href="https://www.facebook.com/media/set/?set=a.556982820995569.148252.100000515684462&amp;type=1&amp;l=465f849538">Facebook photos</a></li>
+	<li>Cuppers (inter college competition): 7th Week Michelmas -&nbsp;<a href="index_7_3726009126.xlsx">results spreadsheet</a></li>
+	<li><a href="http://www.oxbridgepentathlon.org.uk/ob/">Old Blues</a>: Mid-Hilary -&nbsp;<a href="https://docs.google.com/spreadsheet/ccc?key=0AoZ4jQaSdZrJdFAwYWtFdzVrUmhHV0pESjIwUjBxaXc&amp;usp=sharing">results spreadsheet</a></li>
+	<li><a href="http://www.oxbridgepentathlon.org.uk/bucs/">BUCS</a>: 8th-9th March 2013 -&nbsp;<a href="http://www.oxbridgepentathlon.org.uk/BUCS/Results/BUCSPentathlonAndBiathlonResults2013Finalv1.00.pdf">full results</a>&nbsp;and&nbsp;<a href="https://www.facebook.com/media/set/?set=a.408074609219725.116470.100000515684462&amp;type=1&amp;l=c2a01562de">photos on Facebook</a></li>
+	<li><a href="http://www.oxbridgepentathlon.org.uk/vm">Varsity Match</a>: 5th-6th April 2013 - <a href="https://www.facebook.com/events/432184813524094/">Facebook event</a></li>
+</ul>
+
+<h2>Stash</h2>
+
+<p>We have some dashing OUMPA apparel from Nike that can be personalised with your name or initials, see <a href="http://www.ousportshop.com/modern-pentathlon">ousportshop.com</a> for more details.</p>
+
+<p>In addition, there are dark blue swimming hats, club-coloured ties and bow ties available to buy from <a href="mailto:amelia.newland@pmb.ox.ac.uk">our treasurer</a>. The ladies and gentlemens&#39; teams also traditionally procure an exclusive item of &#39;novelty stash&#39; for the 18 athletes that compete against Cambridge.</p>
+
+<h2>Documents</h2>
+
+<p><a href="https://docs.google.com/document/d/1M6iata_A6yqhR5cN99jx5lOKq3I0ysE3y4y3oQ5aYWs/edit?usp=sharing">Constitution</a>, <a href="https://docs.google.com/document/d/1Y9V4VKQxmRzgHLuXUyNMBUiPUrFSYB2SUhq8rqNwtFg/edit?usp=sharing">Code of Conduct</a>,&nbsp;<a href="index_22_714422733.docx">Minutes of 2013 AGM</a>.</p>
+</div>
+
+<div id="findoutmore">
+
+
+<h2>Find Out More</h2>
+<div id="getinvolved">
+  
+  
+
+  <form method="get" action="http://danfoxdesign.co.uk/oumpa-subscribe" onsubmit="javascript:var i = document.createElement('img');
+i.src = 'http://danfoxdesign.co.uk/oumpa-subscribe?e='+encodeURIComponent(document.getElementById('e').value);document.getElementById('e').value='';alert('Thank you for subscribing to the OUMPA mailing list.\n Please reply to the confirmation email to complete the process.');return false;">
+
+  <div class="left">
+  <!--
+<p>Sign up for our mailing list:</p>
+  <p>Send a blank email to <br /><a href="mailto:oumpa-subscribe@maillist.ox.ac.uk">oumpa-subscribe@maillist.ox.ac.uk</a>.</p>
+  
+-->  <label for="e">Enter your email to<br /> sign up for the mailing list:</label>
+    <input type="text" id="e" name="e" placeholder="first.last@coll.ox.ac.uk" size="30" />
+    <input type="submit" value="Sign Up" />
+  </div>
+  <div class="right">
+    <a href="http://facebook.com/groups/oumpa"><img src="v2/facebookgroup.jpg" alt="Join our facebook group" title="Join our group to see photos, events and get in touch with members" width="193" /></a>
+  </div>
+  </form>
+
+</div>
+
+<h2>Contact The Committee</h2>
+
+<p class="committee">
+<a href="mailto:daniel.fox@magd.ox.ac.uk"><img src="https://graph.facebook.com/pentathlete/picture?width=80&amp;height=80" alt="President: Dan Fox" /><span>President: Dan Fox<br /> 
+<em>daniel.fox@magd.ox.ac.uk</em> <em>(07787 310832)</em></span></a>
+
+<a href="mailto:drew.davy@spc.ox.ac.uk"><img src="https://graph.facebook.com/drew.davy/picture?width=80&amp;height=80" alt="Men's Captain: Drew Davy" /><span>Men's Captain: Drew Davy
+<em>drew.davy@spc.ox.ac.uk</em></span></a>
+
+<a href="mailto:saskia.greenhalgh@sjc.ox.ac.uk"><img src="https://graph.facebook.com/saskia.greenhalgh/picture?width=80&amp;height=80" alt="Women's Captain: Saskia Greenhalgh" /><span>Women's Captain: Saskia Greenhalgh 
+<em>saskia.greenhalgh@sjc.ox.ac.uk</em></span></a>
+
+<a href="amelia.newland@pmb.ox.ac.uk"><img src="https://graph.facebook.com/619320047/picture?width=80&amp;height=80" alt="Treasurer: Amelia Newland" /><span>Treasurer: Amelia Newland 
+<em>amelia.newland@pmb.ox.ac.uk</em></span></a>
+
+<a href="mailto:alexander.fraser@queens.ox.ac.uk"><img src="https://graph.facebook.com/875055586/picture?width=80&amp;height=80" alt="Secretary: Alex Fraser" /><span>Secretary: Alex Fraser 
+<em>alexander.fraser@queens.ox.ac.uk</em></span></a> 
+
+<a href="mailto:melanie.gurney@seh.ox.ac.uk"><img src="https://graph.facebook.com/melanie.gurney2/picture?width=80&amp;height=80" alt="Social Secretary: Mel Gurney" /><span>Social Secretary: Mel Gurney
+<em>melanie.gurney@seh.ox.ac.uk</em></span></a>
+
+<a href="mailto:thomas.lees@chch.ox.ac.uk"><img src="https://graph.facebook.com/tommylees112/picture?width=80&amp;height=80" alt="Social Secretary: Tommy Lees" /><span>Social Secretary: Tommy Lees 
+<em>thomas.lees@chch.ox.ac.uk</em></span></a>
+
+<a href="mailto:katherine.hickson@stcatz.ox.ac.uk"><img src="https://graph.facebook.com/katie.hickson.18/picture?width=80&amp;height=80" alt="Publicity and Sponsorship: Katie Hickson" /><span>Publicity and Sponsorship: Katie Hickson
+<em>katherine.hickson@stcatz.ox.ac.uk</em></span></a> 
+
+
+<!--
+<a href="mailto:amelia.davies@st-hughs.ox.ac.uk"><img src="https://graph.facebook.com/amelia.davies/picture?width=80&amp;height=80" alt="President: Millie Davies" /><span>President: Millie Davies 
+<em>amelia.davies@st-hughs.ox.ac.uk</em></span></a>
+<a href="mailto:alexander.fraser@queens.ox.ac.uk"><img src="https://graph.facebook.com/875055586/picture?width=80&amp;height=80" alt="Men's Captain: Alex Fraser" /><span>Men's Captain: Alex Fraser 
+<em>alexander.fraser@queens.ox.ac.uk</em></span></a>
+<a href="mailto:amelia.newland@pmb.ox.ac.uk"><img src="https://graph.facebook.com/619320047/picture?width=80&amp;height=80" alt="Women's Captain: Amelia Newland" /><span>Women's Captain: Amelia Newland 
+<em>amelia.newland@pmb.ox.ac.uk</em></span></a>
+<a href="mailto:caspar.donnison@pmb.ox.ac.uk"><img src="https://graph.facebook.com/caspar.donnison/picture?width=80&amp;height=80" alt="Treasurer: Caspar Donnison" /><span>Treasurer: Caspar Donnison 
+<em>caspar.donnison@pmb.ox.ac.uk</em></span></a>
+<a href="mailto:harry.tabor@lincoln.ox.ac.uk"><img src="https://graph.facebook.com/harry.tabor.37/picture?width=80&amp;height=80" alt="Secretary: Harry Tabor" /><span>Secretary: Harry Tabor 
+<em>harry.tabor@lincoln.ox.ac.uk</em></span></a> 
+<a href="mailto:frederica.onslow@stcatz.ox.ac.uk"><img src="https://graph.facebook.com/onsfj/picture?width=80&amp;height=80" alt="Social Secretary: Freddie Onslow" /><span>Social Secretary: Freddie Onslow 
+<em>frederica.onslow@stcatz.ox.ac.uk</em></span></a>
+<a href="mailto:lucy.crane@seh.ox.ac.uk"><img src="https://graph.facebook.com/713935223/picture?width=80&amp;height=80" alt="Publicity and Sponsorship: Lucy Crane" /><span>Publicity and Sponsorship: Lucy Crane 
+<em>lucy.crane@seh.ox.ac.uk</em></span></a> 
+<a href="mailto:daniel.fox@magd.ox.ac.uk"><img src="https://graph.facebook.com/pentathlete/picture?width=80&amp;height=80" alt="Webmaster: Dan Fox" /><span>Webmaster: Dan Fox 
+<em>daniel.fox@magd.ox.ac.uk</em></span></a>
+-->
+</p>
+
+
+</div>
+
+
+</div>
+
+<div id="subfindoutmore">
+<p><a href="http://ey.com"><img src="v2/ey.png" alt="Ernst &amp; Young" width="190" height="57" title="Ernst &amp; Young kindly sponsor OUMPA" /></a></p>
+</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39376067-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

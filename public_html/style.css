@@ -1,0 +1,72 @@
+body        { background-color: #000033;
+             background-repeat: repeat-x;
+	                margin: 5px;
+                          font: verdana}
+
+/* This is to be used for the main heading to a page or the first heading of the main section*/
+
+h1          {            color: #000066;
+                   font-family: sans-serif;
+  	 	    text-align: center;
+		        margin: 5px}
+
+
+/*This is for the second level heading within the main seciton of the page*/
+
+h2          {            color: #000066;
+                   font-family: sans-serif;
+	       	    text-align: left}
+
+
+/*This is for the third level heading within the main section of the page*/
+  
+h3          {      font-family: sans-serif;
+	      	    text-align: left}
+
+
+
+h4          {       text-align: left;
+                         color: #000066}
+
+
+/*Thisis for the text in the navigation section*/
+ 
+h5          {       text-align: center;
+		   font-family: sans-serif;
+			margin: 10px}
+
+
+/*This is for the right justified links within the navigation section*/
+
+h6          {       text-align: right;
+		   font-family: sans-serif;
+		     font-size: 10pt}
+
+
+/*This is used for the News section on the Home page*/
+
+h7	    {      font-family: sans-serif;
+                    text-align: justify;
+		   margin-left: 0px}
+
+
+p           {      margin-left: 10px;
+                   font-family: sans-serif;
+                    text-align: justify}
+
+a:link      {            color: #cc0033}
+
+a:visited   {            color: #cc0033}
+
+hr          {            color: #000033}
+
+table	    {      font-family: sans-serif;
+		    text-align: center;
+                   bordercolor: #99ccff;
+              bordercolorlight: #99ccff;
+               bordercolordark: #99ccff}
+
+td          { background-color: white}
+                         width: auto}
+
+marquee     {      font-family: sans-serif}

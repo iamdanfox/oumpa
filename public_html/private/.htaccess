@@ -1,0 +1,7 @@
+AuthUserFile /web/users/aragog.oucs.ox.ac.uk/c/5/oumpa/cgi/.htpasswd
+AuthGroupFile /dev/null
+AuthName EnterPassword
+AuthType Basic
+
+require user oumpa
+
