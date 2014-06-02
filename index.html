@@ -8,27 +8,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en" />
 <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css' />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-<script type="text/javascript">
-/*<![CDATA[*/
-
-$(document).ready(function(){
-  $("a[href^='#']").click(function(event){
-     event.preventDefault();
-     //calculate destination place
-     var dest=0;
-     if($(this.hash).offset().top > $(document).height()-$(window).height()){
-          dest=$(document).height()-$(window).height();
-     }else{
-          dest=$(this.hash).offset().top;
-     }
-     //go to destination
-     $('html,body').animate({scrollTop:dest}, 800,'swing');
-   });
-});
-
-/*]]>*/
-</script>
 <style type="text/css">
 /*<![CDATA[*/
 
@@ -36,7 +15,7 @@ body {background:#101623;font-family: sans-serif;/* background:#d2d2d6 */}
 
 #container {width:720px; margin:4em auto;-webkit-box-shadow: 0px 0px 25px rgba(255,255,255,0.3);position:relative;
 font-size:90%;line-height:1.3em;background: #fff;
-background-image: -webkit-gradient(radial, center 110, 0, center 110, 170, from(white), to(#ececec), color-stop(60%,#fcfcfc)); 
+background-image: -webkit-gradient(radial, center 110, 0, center 110, 170, from(white), to(#ececec), color-stop(60%,#fcfcfc));
 }
 
 #header {text-align:Center;padding-top:4em;  }
@@ -225,8 +204,8 @@ Last year&#39;s competitions:
 
 <h2>Find Out More</h2>
 <div id="getinvolved">
-  
-  
+
+
 
   <form method="get" action="http://danfoxdesign.co.uk/oumpa-subscribe" onsubmit="javascript:var i = document.createElement('img');
 i.src = 'http://danfoxdesign.co.uk/oumpa-subscribe?e='+encodeURIComponent(document.getElementById('e').value);document.getElementById('e').value='';alert('Thank you for subscribing to the OUMPA mailing list.\n Please reply to the confirmation email to complete the process.');return false;">
@@ -235,7 +214,7 @@ i.src = 'http://danfoxdesign.co.uk/oumpa-subscribe?e='+encodeURIComponent(docume
   <!--
 <p>Sign up for our mailing list:</p>
   <p>Send a blank email to <br /><a href="mailto:oumpa-subscribe@maillist.ox.ac.uk">oumpa-subscribe@maillist.ox.ac.uk</a>.</p>
-  
+
 -->  <label for="e">Enter your email to<br /> sign up for the mailing list:</label>
     <input type="text" id="e" name="e" placeholder="first.last@coll.ox.ac.uk" size="30" />
     <input type="submit" value="Sign Up" />
@@ -250,47 +229,63 @@ i.src = 'http://danfoxdesign.co.uk/oumpa-subscribe?e='+encodeURIComponent(docume
 <h2>Contact The Committee</h2>
 
 <p class="committee">
-<a href="mailto:daniel.fox@magd.ox.ac.uk"><img src="https://graph.facebook.com/pentathlete/picture?width=80&amp;height=80" alt="President: Dan Fox" /><span>President: Dan Fox<br /> 
-<em>daniel.fox@magd.ox.ac.uk</em> <em>(07787 310832)</em></span></a>
+<a href="mailto:president@oxfordpentathlon.org">
+  <img src="https://graph.facebook.com/toby.ryan.3/picture?width=80&amp;height=80" alt="President: Toby Ryan" />
+  <span>President: Toby Ryan<br />
+<em>president@oxfordpentathlon.org</em> <!--<em>(07787 310832)</em>--></span></a>
 
-<a href="mailto:drew.davy@spc.ox.ac.uk"><img src="https://graph.facebook.com/drew.davy/picture?width=80&amp;height=80" alt="Men's Captain: Drew Davy" /><span>Men's Captain: Drew Davy
-<em>drew.davy@spc.ox.ac.uk</em></span></a>
+<a href="mailto:menscaptain@oxfordpentathlon.org">
+  <img src="https://graph.facebook.com/simon.mousdale/picture?width=80&amp;height=80" alt="Men's Captain: Simon Mousdale" />
+  <span>Men's Captain: Simon Mousdale
+<em>menscaptain@oxfordpentathlon.org</em></span></a>
 
-<a href="mailto:saskia.greenhalgh@sjc.ox.ac.uk"><img src="https://graph.facebook.com/saskia.greenhalgh/picture?width=80&amp;height=80" alt="Women's Captain: Saskia Greenhalgh" /><span>Women's Captain: Saskia Greenhalgh 
-<em>saskia.greenhalgh@sjc.ox.ac.uk</em></span></a>
+<a href="mailto:womenscaptain@oxfordpentathlon.org">
+  <img src="https://graph.facebook.com/katie.hickson.18/picture?width=80&amp;height=80" alt="Women's Captain: Katie Hickson" />
+  <span>Women's Captain: Katie Hickson
+<em>womenscaptain@oxfordpentathlon.org</em></span></a>
 
-<a href="amelia.newland@pmb.ox.ac.uk"><img src="https://graph.facebook.com/619320047/picture?width=80&amp;height=80" alt="Treasurer: Amelia Newland" /><span>Treasurer: Amelia Newland 
-<em>amelia.newland@pmb.ox.ac.uk</em></span></a>
+<a href="mailto:treasurer@oxfordpentathlon.org">
+  <img src="https://graph.facebook.com/pentathlete/picture?width=80&amp;height=80" alt="Treasurer: Dan Fox" />
+  <span>Treasurer: Dan Fox
+<em>treasurer@oxfordpentathlon.org</em></span></a>
 
-<a href="mailto:alexander.fraser@queens.ox.ac.uk"><img src="https://graph.facebook.com/875055586/picture?width=80&amp;height=80" alt="Secretary: Alex Fraser" /><span>Secretary: Alex Fraser 
-<em>alexander.fraser@queens.ox.ac.uk</em></span></a> 
+<a href="mailto:secretary@oxfordpentathlon.org">
+  <img src="https://graph.facebook.com/875055586/picture?width=80&amp;height=80" alt="Secretary: Alex Fraser" />
+  <span>Secretary: Alex Fraser
+<em>secretary@oxfordpentathlon.org</em></span></a>
 
-<a href="mailto:melanie.gurney@seh.ox.ac.uk"><img src="https://graph.facebook.com/melanie.gurney2/picture?width=80&amp;height=80" alt="Social Secretary: Mel Gurney" /><span>Social Secretary: Mel Gurney
-<em>melanie.gurney@seh.ox.ac.uk</em></span></a>
+<a href="mailto:socialsec@oxfordpentathlon.org">
+  <img src="https://graph.facebook.com/alexrobertson92/picture?width=80&amp;height=80" alt="Social Secretary: Alex Robertson" />
+  <span>Social Secretary: Alex Robertson
+<em>socialsec@oxfordpentathlon.org</em></span></a>
 
-<a href="mailto:thomas.lees@chch.ox.ac.uk"><img src="https://graph.facebook.com/tommylees112/picture?width=80&amp;height=80" alt="Social Secretary: Tommy Lees" /><span>Social Secretary: Tommy Lees 
-<em>thomas.lees@chch.ox.ac.uk</em></span></a>
+<a href="mailto:socialsec@oxfordpentathlon.org">
+  <img src="https://graph.facebook.com/victoria.rees.167/picture?width=80&amp;height=80" alt="Social Secretary: Vicky Rees" />
+  <span>Social Secretary: Vicky Rees
+<em>socialsec@oxfordpentathlon.org</em></span></a>
 
-<a href="mailto:katherine.hickson@stcatz.ox.ac.uk"><img src="https://graph.facebook.com/katie.hickson.18/picture?width=80&amp;height=80" alt="Publicity and Sponsorship: Katie Hickson" /><span>Publicity and Sponsorship: Katie Hickson
-<em>katherine.hickson@stcatz.ox.ac.uk</em></span></a> 
+<a href="mailto:publicityandsponsorship@oxfordpentathlon.org">
+  <img src="https://graph.facebook.com/anna.marialara.9/picture?width=80&amp;height=80" alt="Publicity and Sponsorship: Anna Coenen-Stass" />
+  <span>Publicity and Sponsorship: Anna Coenen-Stass
+<em>publicityandsponsorship@oxfordpentathlon.org</em></span></a>
 
 
 <!--
-<a href="mailto:amelia.davies@st-hughs.ox.ac.uk"><img src="https://graph.facebook.com/amelia.davies/picture?width=80&amp;height=80" alt="President: Millie Davies" /><span>President: Millie Davies 
+<a href="mailto:amelia.davies@st-hughs.ox.ac.uk"><img src="https://graph.facebook.com/amelia.davies/picture?width=80&amp;height=80" alt="President: Millie Davies" /><span>President: Millie Davies
 <em>amelia.davies@st-hughs.ox.ac.uk</em></span></a>
-<a href="mailto:alexander.fraser@queens.ox.ac.uk"><img src="https://graph.facebook.com/875055586/picture?width=80&amp;height=80" alt="Men's Captain: Alex Fraser" /><span>Men's Captain: Alex Fraser 
+<a href="mailto:alexander.fraser@queens.ox.ac.uk"><img src="https://graph.facebook.com/875055586/picture?width=80&amp;height=80" alt="Men's Captain: Alex Fraser" /><span>Men's Captain: Alex Fraser
 <em>alexander.fraser@queens.ox.ac.uk</em></span></a>
-<a href="mailto:amelia.newland@pmb.ox.ac.uk"><img src="https://graph.facebook.com/619320047/picture?width=80&amp;height=80" alt="Women's Captain: Amelia Newland" /><span>Women's Captain: Amelia Newland 
+<a href="mailto:amelia.newland@pmb.ox.ac.uk"><img src="https://graph.facebook.com/619320047/picture?width=80&amp;height=80" alt="Women's Captain: Amelia Newland" /><span>Women's Captain: Amelia Newland
 <em>amelia.newland@pmb.ox.ac.uk</em></span></a>
-<a href="mailto:caspar.donnison@pmb.ox.ac.uk"><img src="https://graph.facebook.com/caspar.donnison/picture?width=80&amp;height=80" alt="Treasurer: Caspar Donnison" /><span>Treasurer: Caspar Donnison 
+<a href="mailto:caspar.donnison@pmb.ox.ac.uk"><img src="https://graph.facebook.com/caspar.donnison/picture?width=80&amp;height=80" alt="Treasurer: Caspar Donnison" /><span>Treasurer: Caspar Donnison
 <em>caspar.donnison@pmb.ox.ac.uk</em></span></a>
-<a href="mailto:harry.tabor@lincoln.ox.ac.uk"><img src="https://graph.facebook.com/harry.tabor.37/picture?width=80&amp;height=80" alt="Secretary: Harry Tabor" /><span>Secretary: Harry Tabor 
-<em>harry.tabor@lincoln.ox.ac.uk</em></span></a> 
-<a href="mailto:frederica.onslow@stcatz.ox.ac.uk"><img src="https://graph.facebook.com/onsfj/picture?width=80&amp;height=80" alt="Social Secretary: Freddie Onslow" /><span>Social Secretary: Freddie Onslow 
+<a href="mailto:harry.tabor@lincoln.ox.ac.uk"><img src="https://graph.facebook.com/harry.tabor.37/picture?width=80&amp;height=80" alt="Secretary: Harry Tabor" /><span>Secretary: Harry Tabor
+<em>harry.tabor@lincoln.ox.ac.uk</em></span></a>
+<a href="mailto:frederica.onslow@stcatz.ox.ac.uk"><img src="https://graph.facebook.com/onsfj/picture?width=80&amp;height=80" alt="Social Secretary: Freddie Onslow" /><span>Social Secretary: Freddie Onslow
 <em>frederica.onslow@stcatz.ox.ac.uk</em></span></a>
-<a href="mailto:lucy.crane@seh.ox.ac.uk"><img src="https://graph.facebook.com/713935223/picture?width=80&amp;height=80" alt="Publicity and Sponsorship: Lucy Crane" /><span>Publicity and Sponsorship: Lucy Crane 
-<em>lucy.crane@seh.ox.ac.uk</em></span></a> 
-<a href="mailto:daniel.fox@magd.ox.ac.uk"><img src="https://graph.facebook.com/pentathlete/picture?width=80&amp;height=80" alt="Webmaster: Dan Fox" /><span>Webmaster: Dan Fox 
+<a href="mailto:lucy.crane@seh.ox.ac.uk"><img src="https://graph.facebook.com/713935223/picture?width=80&amp;height=80" alt="Publicity and Sponsorship: Lucy Crane" /><span>Publicity and Sponsorship: Lucy Crane
+<em>lucy.crane@seh.ox.ac.uk</em></span></a>
+<a href="mailto:daniel.fox@magd.ox.ac.uk"><img src="https://graph.facebook.com/pentathlete/picture?width=80&amp;height=80" alt="Webmaster: Dan Fox" /><span>Webmaster: Dan Fox
 <em>daniel.fox@magd.ox.ac.uk</em></span></a>
 -->
 </p>
@@ -306,6 +301,27 @@ i.src = 'http://danfoxdesign.co.uk/oumpa-subscribe?e='+encodeURIComponent(docume
 </div>
 
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+$(document).ready(function(){
+  $("a[href^='#']").click(function(event){
+     event.preventDefault();
+     //calculate destination place
+     var dest=0;
+     if($(this.hash).offset().top > $(document).height()-$(window).height()){
+          dest=$(document).height()-$(window).height();
+     }else{
+          dest=$(this.hash).offset().top;
+     }
+     //go to destination
+     $('html,body').animate({scrollTop:dest}, 800,'swing');
+   });
+});
+
+/*]]>*/
+</script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
