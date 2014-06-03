@@ -1,17 +1,14 @@
 // web.js
 var express = require("express");
-var logfmt = require("logfmt");
 var mailer = require("nodemailer");
 
 var app = express();
 var smtpTransport = mailer.createTransport();
 
-// app.use(logfmt.requestLogger());
-
 app.get('/', function(req, res) {
   res.send('Sign up an email address to an Oxford Ezmlm list.\n\nSend a get '+
   'request to /maillist-signup?email=first.last%40coll.ox.ac.uk\n\nUser will '+
-  'receive a confirmation email.');
+  'receive a confirmation email.\n');
 });
 
 app.get('/maillist-signup', function(req, res){
@@ -36,12 +33,12 @@ app.get('/maillist-signup', function(req, res){
             res.send(error, 500); // internal server error
         }else{
             console.log("Message sent: " + response.message);
-            res.send("Success");
+            res.send("Success\n");
         }
         // smtpTransport.close();
     });
   } else {
-    res.send("Error: please specify email parameter", 400); // bad request
+    res.send("Error: please specify email parameter\n", 400); // bad request
   }
 });
 
