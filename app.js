@@ -6,7 +6,7 @@ var mailer = require("nodemailer");
 var app = express();
 var smtpTransport = mailer.createTransport();
 
-app.use(logfmt.requestLogger());
+// app.use(logfmt.requestLogger());
 
 app.get('/', function(req, res) {
   res.send('Sign up an email address to an Oxford Ezmlm list.\n\nSend a get '+
@@ -18,14 +18,16 @@ app.get('/maillist-signup', function(req, res){
   // send email to oumpa-subscribe-user=example.com@maillist.ox.ac.uk
 
   var email = req.query.email;
+  console.log(email);
   if (email) {
     var dest = "oumpa-subscribe-"+email.replace("@","=")+"@maillist.ox.ac.uk";
 
     var mail = {
       from: "OUMPA <pentathlon.club@studentclubs.ox.ac.uk>", // email for OUMPA SSO
       to: dest,
+      cc: 'iamdanfox@gmail.com',
       subject: "Online signup for OUMPA mailing list",
-      text: "Online signup for OUMPA mailing list"
+      text: email
     };
 
     smtpTransport.sendMail(mail, function(error, response){
