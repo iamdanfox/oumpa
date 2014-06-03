@@ -1,6 +1,8 @@
 // web.js
 var express = require("express");
 var logfmt = require("logfmt");
+var mailer = require("nodemailer");
+
 var app = express();
 
 app.use(logfmt.requestLogger());
