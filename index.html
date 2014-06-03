@@ -258,8 +258,8 @@ Last year&#39;s competitions:
 
 
 
-  <form method="get" action="http://danfoxdesign.co.uk/oumpa-subscribe" onsubmit="javascript:var i = document.createElement('img');
-i.src = 'http://danfoxdesign.co.uk/oumpa-subscribe?e='+encodeURIComponent(document.getElementById('e').value);document.getElementById('e').value='';alert('Thank you for subscribing to the OUMPA mailing list.\n Please reply to the confirmation email to complete the process.');return false;">
+  <form method="get" action="http://agile-sands-9690.herokuapp.com/maillist-signup"
+  onsubmit="javascript:$.get('http://agile-sands-9690.herokuapp.com/maillist-signup?email='+encodeURIComponent($('#e').val()));$('#e').val('');alert('Thank you for subscribing to the OUMPA mailing list.\nPlease reply to the confirmation email to complete the process.');return false;">
 
   <div class="left">
   <!--
@@ -267,7 +267,7 @@ i.src = 'http://danfoxdesign.co.uk/oumpa-subscribe?e='+encodeURIComponent(docume
   <p>Send a blank email to <br /><a href="mailto:oumpa-subscribe@maillist.ox.ac.uk">oumpa-subscribe@maillist.ox.ac.uk</a>.</p>
 
 -->  <label for="e">Enter your email to<br /> sign up for the mailing list:</label>
-    <input type="text" id="e" name="e" placeholder="first.last@coll.ox.ac.uk" size="30" />
+    <input type="text" id="e" name="email" placeholder="first.last@coll.ox.ac.uk" size="30" />
     <input type="submit" value="Sign Up" />
   </div>
   <div class="right">
