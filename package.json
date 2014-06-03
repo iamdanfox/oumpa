@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/iamdanfox/oumpa/issues"
   },
-  "homepage": "https://github.com/iamdanfox/oumpa"
+  "homepage": "https://github.com/iamdanfox/oumpa",
+  "dependencies": {
+    "express": "~4.4.1",
+    "logfmt": "~1.1.2"
+  }
 }
