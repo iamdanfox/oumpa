@@ -12,17 +12,15 @@ app.get('/', function(req, res) {
 });
 
 app.get('/maillist-signup', function(req, res){
-  // send email to oumpa-subscribe-user=example.com@maillist.ox.ac.uk
+  // send email to oumpa-subscribe@maillist.ox.ac.uk, impersonating the new signup
 
   var email = req.query.email;
   console.log(email);
   if (email) {
-    var dest = "oumpa-subscribe-"+email.replace("@","=")+"@maillist.ox.ac.uk";
-
     var mail = {
-      from: "OUMPA <pentathlon.club@studentclubs.ox.ac.uk>", // email for OUMPA SSO
-      to: dest,
-      cc: 'iamdanfox@gmail.com',
+      from: email,
+      to: "oumpa-subscribe@maillist.ox.ac.uk",
+      cc: 'president@oxfordpentathlon.org, OUMPA <pentathlon.club@studentclubs.ox.ac.uk>',
       subject: "Online signup for OUMPA mailing list",
       text: email
     };
