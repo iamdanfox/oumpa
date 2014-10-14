@@ -37,16 +37,20 @@
 
     ## Implementation details ##
 
-    The maillist signup form was designed to work the Ezmlm program that managed
-    the OUMPA mailing list in 2013.  Since there is no web API, it registers
-    the email address user@example.com to the list by sending an email to:
+    The maillist signup form was designed to work the SYMPA program that managed
+    the OUMPA mailing list in 2014.  Since there is no web API, it registers
+    the email address user@example.com to the list by sending an email from that address to:
 
-        oumpa-subscribe-user=example.com@maillist.ox.ac.uk
+        oumpa-subscribe@maillist.ox.ac.uk
 
     The sending script runs on the node.js platform, on a free dyno provided
-    by Heroku <http://maillist-subscribe.herokuapp.com>.  Push the
-    `maillist-subscribe` branch to Heroku master to update.  To be added as a
-    collaborator on Heroku, [email me][3].
+    by Heroku <http://maillist-subscribe.herokuapp.com>.  You'll need the correct
+    remote set up (git@heroku.com:maillist-subscribe.git).  To update it, push the
+    `maillist-signup` branch to Heroku master to update:
+
+      git push heroku maillist-signup:master
+
+    To be added as a collaborator on Heroku, [email me][3].
 
 
     [1]: http://github.com/iamdanfox/oumpa
