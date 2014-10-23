@@ -20,7 +20,7 @@ app.get('/maillist-signup', function(req, res){
     var mail = {
       from: email,
       to: "oumpa-subscribe@maillist.ox.ac.uk",
-      cc: 'president@oxfordpentathlon.org, OUMPA <pentathlon.club@studentclubs.ox.ac.uk>',
+      cc: 'webmaster@oxfordpentathlon.org',
       subject: "[OUMPA mailing list notification] "+email+" just signed up for the OUMPA mailing list",
       text: email + " just signed up for the OUMPA mailing list on oxfordpentathlon.org. \n\n" +
         "You shouldn't need to do anything, but if this email looks like a tab, you can kick them off at " +
