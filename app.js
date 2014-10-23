@@ -1,7 +1,27 @@
-// web.js
+/*
+ * OUMPA Maillist Subscribe
+ * ========================
+ *
+ * The maillist signup form was designed to work the SYMPA program that managed
+ * the OUMPA mailing list in 2014.  Since there is no web API, it registers
+ * the email address user@example.com to the list by sending an email from that address to:
+ *
+ *   oumpa-subscribe@maillist.ox.ac.uk
+ *
+ * The sending script runs on the node.js platform, on a free dyno provided
+ * by Heroku <http://maillist-subscribe.herokuapp.com>.  You'll need the correct
+ * remote set up (git@heroku.com:maillist-subscribe.git).  To update it, push the
+ * `maillist-signup` branch to Heroku master to update:
+ *
+ *   git push heroku maillist-signup:master
+ *
+ * To be added as a collaborator on Heroku, [email me][1].
+ *
+ * [1]: mailto:iamdanfox@gmail.com
+ */
+
 var express = require("express");
 var mailer = require("nodemailer");
-
 var app = express();
 var smtpTransport = mailer.createTransport();
 
